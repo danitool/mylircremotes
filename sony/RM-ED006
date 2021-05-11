@@ -1,0 +1,97 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.5(default) on Tue Dec 22 22:52:14 2009
+#
+# contributed by danitool
+#
+# brand:                       SONY
+# model no. of remote control: RM-ED006
+# devices being controlled by this remote:
+# Sony BRAVIA tv: KDL-52X2000, KDL-46X2000, KDL-40X2000
+
+
+begin remote
+
+  name  RM-ED006
+  bits           12
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       2447   536
+  one          1243   551
+  zero          643   551
+  gap          44809
+  min_repeat      3
+  toggle_bit_mask 0x0
+
+      begin codes
+          source                   0xA50
+          A/B                      0xE90
+          power                    0xA90
+          1                        0x010
+          2                        0x810
+          3                        0x410
+          4                        0xC10
+          5                        0x210
+          6                        0xA10
+          7                        0x610
+          8                        0xE10
+          9                        0x110
+          text                     0xFD0
+          0                        0x910
+          pchannel                 0xDD0
+          ANALOG                   0x1D0
+          pfreeze                  0x3B0
+          red                      0x338
+          green                    0xB38
+          yellow                   0x738
+          blue                     0xF38
+          i+?                      0x5D0
+          MENU                     0x070
+          up                       0x2F0
+          down                     0xAF0
+          left                     0x2D0
+          right                    0xCD0
+          ok                       0xA70
+          vol+                     0x490
+          vol-                     0xC90
+          mute                     0x290
+          prog+                    0x090
+          prog-                    0x890
+      end codes
+
+end remote
+
+
+
+begin remote
+
+  name  RM-ED006
+  bits           15
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       2461   522
+  one          1264   529
+  zero          666   529
+  gap          44833
+  min_repeat      3
+  toggle_bit_mask 0x0
+
+      begin codes
+          DIGITAL                  0x25EE
+          screenmode               0x5E25
+          EPG                      0x6D25
+          RETURN                   0x62E9
+          TOOLS                    0x36E9
+      end codes
+
+end remote
+
+
+

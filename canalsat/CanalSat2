@@ -1,0 +1,67 @@
+#
+# this config file was automatically generated
+# using lirc-0.8.0(serial) on Fri Feb  2 22:53:30 2007
+#
+# contributed by kazer - kazer at altern.org
+#
+# brand:                       CanalSat
+# model no. of remote control: 
+# devices being controlled by this remote: CanalSat receiver
+#
+
+begin remote
+
+  name  CanalSat
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           891   852
+  zero          891   852
+  plead         877
+  gap          111338
+  min_repeat      1
+  toggle_bit      2
+
+
+      begin codes
+          Pilote                   0x128F
+          Progr                    0x028F
+          Up                       0x0290
+          Down                     0x0291
+          Left                     0x0295
+          Right                    0x0296
+          OK                       0x0297
+          ++                       0x1290
+          -                        0x1291
+          cup                      0x12A0
+          cown                     0x12A1
+          1                        0x1281
+          2                        0x1282
+          3                        0x1283
+          4                        0x1284
+          5                        0x1285
+          6                        0x1286
+          7                        0x1287
+          8                        0x1288
+          9                        0x1289
+          0                        0x1280
+          Prefer                   0x02A1
+          Sortie                   0x0293
+          Serv                     0x0292
+          +                        0x12AF
+          Perso                    0x02AA
+          A                        0x02AB
+          B                        0x02AC
+          C                        0x02AD
+          D                        0x02AE
+          E                        0x02AF
+          Mute                     0x0286
+          TV/Sat                   0x12A8
+          Power                    0x128C
+      end codes
+
+end remote
+
+

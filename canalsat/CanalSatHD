@@ -1,0 +1,80 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.5(default) on Thu Dec 24 14:58:36 2009
+#
+# contributed by danitool
+#
+# brand:                       CanalSat
+# model no. of remote control: CanalSatHD
+# devices being controlled by this remote: iPlus
+# same codes like CanalSat but with extra buttons
+
+begin remote
+
+  name  CanalSatHD
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           961   830
+  zero          961   830
+  plead         980
+  gap          113128
+  min_repeat      1
+  toggle_bit_mask 0x800
+
+      begin codes
+          TV                       0x12A8
+          power                    0x128C
+          DIGITAL+                 0x0288
+          SERV                     0x0292
+          PERSO                    0x02AA
+          PILOTO                   0x128F
+          GUIA                     0x028F
+          MICANAL                  0x02B2
+          TDT                      0x028A
+          V+                       0x1290
+          V-                       0x1291
+          P+                       0x12A0
+          P-                       0x12A1
+          +                        0x12AF
+          screen                   0x02BE
+          up                       0x0290
+          down                     0x0291
+          left                     0x0295
+          right                    0x0296
+          ok                       0x0297
+          volver                   0x12A2
+          salir                    0x0293
+          pause                    0x12B0
+          play                     0x12B5
+          stop                     0x12B6
+          rec                      0x12B7
+          <<                       0x12B2
+          >>                       0x12B4
+          A                        0x02AB
+          B                        0x02AC
+          C                        0x02AD
+          D                        0x02AE
+          E                        0x02AF
+          1                        0x1281
+          2                        0x1282
+          3                        0x1283
+          4                        0x1284
+          5                        0x1285
+          6                        0x1286
+          7                        0x1287
+          8                        0x1288
+          9                        0x1289
+          0                        0x1280
+          mute                     0x0286
+          prefe                    0x02A1
+      end codes
+
+end remote
+
+
